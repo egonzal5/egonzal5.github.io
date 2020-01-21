@@ -61,8 +61,10 @@ h6 {
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+  font-size: large;
+  line-height: 1rem;
+  text-align: center;
+  
 }
 
 h2 {
@@ -72,6 +74,7 @@ h2 {
 h3 {
   font-size: 2rem;
   color: #2d2e30;
+  
 }
 
 p.lead {
