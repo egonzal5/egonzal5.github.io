@@ -37,8 +37,8 @@ body {
 
 /* Add a color to the active/current link */
 .topBar a.active {
-  background-color: rgb(224, 180, 180);
-  color: white;
+  background-color: rgb(180, 180, 180);
+  color: rgb(0, 0, 0);
 }
 
 @media (min-width: 992px) {
@@ -207,7 +207,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #ffffff;
 }
 .headerImage {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
