@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CMSC131 Object-Oriented Programming I (Fall 2021) </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="max-age=0, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/cscourse.css" rel="stylesheet">
+    <style>
+        a:link {
+            text-decoration: underline;
+        }
+
+    </style>
+    <!--
+        <script>
+              let message = "Final Exam this Friday, May 15, starting at 9 AM (morning).\n";
+              message += "Make sure you have read the message we posted regarding\n";
+	      message += "Good Faith Attempts (search for GFAM in Piazza)\n";
+              alert(message);
+        </script>
+        -->
+</head>
+
+<body>
+    <!-- for a static bar add navbar-static-top to the following entry -->
+    <!-- for a fixed-top add navbar-fixed-top -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <!-- Navigation Part 1-->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://www.cs.umd.edu/">UMCP (CMSC131)</a>
+
+                <!-- button visible when navbar collapses -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcontent">
+
+                    <!-- displaying icon representing button -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Navigation Part 2 has main content of navigation bar -->
+            <div id="navbarcontent" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.shtml"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li><a href="index.shtml">Syllabus</a></li>
+                    <li><a href="schedule.shtml">Schedule</a></li>
+                    <li><a href="officeHours.shtml">Office Hours</a></li>
+
+                    <!-- dropdown for projects -->
+
+                    <li class="dropdown">
+                        <!-- COMMENT dropdown tile COMMENT (add comment symbols if used -->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Projects <span class="caret"></span>
+                        </a>
+
+                        <!-- COMMENT actual dropdown COMMENT (add comment symbols if used -->
+                        <ul class="dropdown-menu">
+
+                            <li><a href="prot/projects/JavaBasicsCond">Project #1 (Java Basics / Conditionals)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="prot/projects/JavaLoops/">Project #2 (Java Loops)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="prot/projects/DrawingApp/">Project #3 (DrawingApp)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="prot/projects/PassportClass/">Project #4 (Passport Class)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="prot/projects/PhotoManager/">Project #5 (PhotoManager)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="prot/projects/ProgrammingExperience">Programming Experience</a></li>
+                            <li class="divider"></li>
+                            <li><a href="prot/projects/ArrayUtilities">Project #6 (ArrayUtilities)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="prot/projects/DiagramSystem/">Project #7 (Diagram System)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="prot/projects/MediaRentalManager/">Project #8 (MediaRentalManager)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="prot/projects/RecursionExercise/">Recursion Exercise</a></li>
+                            <li class="divider"></li>
+                            
+                        </ul>
+                    </li>
+
+                    <!-- dropdown for resources -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Resources <strong class="caret"></strong>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="https://submit.cs.umd.edu/fall2021/">
+                                    Submit Server</a>
+                            </li>
+                            <li>
+                                <a href="https://grades.cs.umd.edu">Grades Server</a>
+                            </li>
+                            <li>
+                                <a href="piazza.shtml">Piazza</a>
+                            </li>
+                            <li>
+                                <a href="quizzesExams.shtml">Quizzes/Exams</a>
+                            </li>
+                            <li>
+                                <a href="gradingConcerns.shtml">Grading Concerns</a>
+                            </li>
+                            <li>
+                                <a href="lectureVideos.shtml">Lecture Videos</a>
+                            </li>
+                            <li>
+                                <a href="goodFaithAttempt.shtml">Good Faith Attempt</a>
+                            </li>
+
+                            <li>
+                                <a href="http://www.cs.umd.edu/~nelson/classes/resources/javastyleguide/">Java Style Guide</a>
+                            </li>
+
+                            <li><a href="http://www.cs.umd.edu/~nelson/eclipse/">
+                                    Eclipse</a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/kekesh/CMSC131/blob/master/CMSC131.pdf">Lecture Notes</a>
+                            </li>
+
+                            <li>
+                                <a href="https://docs.oracle.com/en/java/javase/11/docs/api/index.html">Java API</a>
+                            </li>
+
+
+                            <li>
+                                <a href="other.shtml">Other</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="container-fluid">
+	<h1><span class="h2">CMSC131 (Fall 2021, Nelson's Sections 01*, 03*, FC01)<br>Object-Oriented Programming I </span></h1>
+	<span class="h3 myUnderline">Syllabus</span>
+	<div class="h4 myUnderline">Introduction</div>
+
+	<p>
+		This is the first programming course for Computer Science majors
+		with a focus on object-oriented programming. The goal of the course
+		is to develop skills such as program design and testing as well as
+		the implementation of programs using a graphical IDE. All programming
+		will be done in Java.
+
+		<!-- For a video intro select <a href="http://ivipid.com/watch/ljfp0/">
+        video intro.</a> -->
+	</p>
+
+	<div class="h4 myUnderline">Prerequisites</div>
+	<p>
+		Corerequisite: Math140
+	</p>
+
+	<div class="h4 myUnderline">Coordinator</div>
+	<p>
+		<a href="http://www.cs.umd.edu/~nelson/">Nelson Padua-Perez</a>, Office:
+		<a href="https://maps.umd.edu/map/index.html?&zoom=18&feature=building&name=432&basemap=detailed">IRB 2210</a>
+	</p>
+
+	<div class="h4 myUnderline">Textbook</div>
+	<p>
+		No required textbook.
+	</p>
+
+	<!--
+    <div class="h4 myUnderline">Class Format</div>
+    <p>
+        This class is completely online.
+        Lectures are pre-recorded, lab (discussion session) will be synchronous (live
+        using Zoom) and office hours will be online.  Attendance is not required, but you are
+        responsible for any material covered in lecture/lab.
+    </p>
+    -->
+	<p>
+		<strong> We may record Zoom lab/discussion sessions and lecture presentations.
+			If this represents a problem for you, please contact your instructor.
+		</strong>
+	</p>
+
+	<div class="h4 myUnderline">Course Topics (Subject to Change)</div>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped table-hover table-condensed text-center">
+			<tbody>
+				<tr>
+					<td>Intro to Computer Systems</td>
+					<td>Variables, Operators</td>
+				</tr>
+				<tr>
+					<td>Expressions, Statements, Methods</td>
+					<td>Java Text Input/Output</td>
+				</tr>
+				<tr>
+					<td>Conditionals</td>
+					<td>Loops</td>
+				</tr>
+				<tr>
+					<td>Principles of Object Oriented Programming</td>
+					<td>Basics of Program Design</td>
+				</tr>
+
+				<tr>
+					<td>Testing and Debugging</td>
+					<td>Java Memory Map</td>
+				</tr>
+				<tr>
+					<td>Arrays and Java ArrayLists</td>
+					<td>Java interfaces</td>
+				</tr>
+				<tr>
+					<td>Inheritance Overview</td>
+					<td>Recursion</td>
+				</tr>
+			</tbody>
+		</table>
+	</div> <!-- grading table -->
+
+	<div class="h4 myUnderline">Grading</div>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped table-hover table-condensed text-center">
+			<tbody>
+				<tr>
+					<td>Programming Assignments (Projects), Exercises, Lab Work</td>
+					<td>32%</td>
+				</tr>
+				<tr>
+					<td>Quizzes</td>
+					<td>10%</td>
+				</tr>
+				<tr>
+					<td>Semester Exams (3), (8%, 12% and 12%)</td>
+					<td>32%</td>
+				</tr>
+				<tr>
+					<td>Final Exam</td>
+					<td>26%</td>
+				</tr>
+			</tbody>
+		</table>
+	</div> <!-- grading table -->
+
+
+	<div class="h4 myUnderline">Grading Concerns</div>
+	<p>
+		<strong>It is your responsibility to submit regrade requests by a
+			specified deadline; no regrade requests will be processed afterwards.
+			Deadlines to address any grading concerns will be available
+			at <a href="gradingConcerns.shtml">Grading Concerns</a>.
+		</strong>
+	</p>
+
+	<div class="h4 myUnderline">Assignments</div>
+	<ul>
+
+		<li><strong>Deadlines</strong> -
+			All assignments are due at <strong>11:55 pm</strong> and you have until
+			<strong>11:55 pm</strong> of the next day to submit your work with
+			a <strong>12%</strong> penalty. You will not receive any credit for
+			a submission after the late date, except the Good Faith Attempt credit
+			(additional information below).
+		</li>
+
+		<li><strong>Submit Server</strong> -
+			You need to use the
+			<a href="https://submit.cs.umd.edu/fall2021">submit server</a> to submit
+			you work. We will not accept work submitted otherwise (e.g.,
+			email, etc.). <strong>You need to make sure that your assignment solution works
+				in the submit server, otherwise you may lose most of the credit.</strong>
+		</li>
+
+		<li><strong>Which Assignments Gets Graded</strong> -
+			For programming assignments the one with public/release/secret tests
+			that scores the highest in the submit server after a late penalty (if any) has been applied.
+			We only use public/release/secret tests scores to select the
+			submission to grade. Other assignment requirements (e.g., style, methods you
+			must implement, allowed classes, etc.) are not considered. We will evaluate
+			those requirements on the selected submission.
+		</li>
+
+		<li><strong>Good Faith Attempt (GFA)</strong> -
+			<strong>You must satisfy a minimum set of requirements (Good Faith Attempt (GFA)) for most class work (usually programming assignments), otherwise you will fail the course (automatic
+				grade of F)</strong>. The Good Faith Attempt guarantees you have the skills necessary
+			for upper-level courses. A good faith attempt for an assignment is worth 0.5 of your
+			class grade. <strong>GFAs are not due at the end of the semester (a common misunderstanding).</strong> GFAs requirements and deadline are available at
+			at <a href="goodFaithAttempt.shtml">CMSC131 GFAs</a>. Additional information about good faith attempts is available
+			at <a href="http://www.cs.umd.edu/~nelson/classes/resources/good_faith_attempt/">GFA Information</a>.
+		</li>
+
+		<li><strong>Closed Assignments</strong> -
+			<strong>All programming assignments in this course are
+				to be written individually (unless explicitly
+				indicated otherwise).
+			</strong>
+		</li>
+
+		<li><strong>No Pop Quizzes/Pop Lab Work</strong> -
+			There are no pop quizzes nor pop lab exercises. We will announce in advance (at least one day) if there is any work you need to submit for a grade.
+		</li>
+	</ul>
+
+
+	<div class="h4 myUnderline">Regarding Posting of Assignments' Solutions/Implementations</div>
+	<ul>
+		<li><strong>
+				Posting of any assignment solution (even after the course is over)
+				in a publicly available online location (e.g., github, Chegg) is prohibited under
+				the Code of Academic Integrity (facilitation of academic dishonesty). Any
+				student responsible for publicly posting assignments' solutions will be reported
+				to the Office of Student Conduct and risks the sanction of an "XF" in the course.
+			</strong>
+		</li>
+
+		<li>
+			Posting of your assignments in a private repository where only selected
+			people (e.g., potential employers) have access is OK.
+		</li>
+	</ul>
+
+	<div class="h4 myUnderline">Covid Related</div>
+	<ul>
+		<li>
+		The campus facilities division have put QR codes on desks throughout the campus.
+		A student can scan the QR code where they are sitting each class, which will "register"
+		their place and location at a particular time. Additional information at <a href="https://provost.umd.edu/node/4243">https://provost.umd.edu/node/4243 (Q&A 4)</a>.
+		</li>
+	</ul>
+
+	<div class="h4 myUnderline">TA Room/Office Hours</div>
+	<p>
+		Office hours get extremely busy the day before an assignment deadline and getting help
+		is not guaranteed. Please start your assignments early so you can address any problems
+		during office hours.
+	</p>
+
+	<div class="h4 myUnderline">Backups</div>
+	<p>
+		You are responsible for creating backups of your work. <strong>Use the submit server as a backup
+			tool by submitting often.</strong>
+	</p>
+
+	<div class="h4 myUnderline">Piazza</div>
+	<p>
+		We will be using (<a href="piazza.shtml">Piazza</a>) for class
+		communication. You will not be able to register to Piazza yourself.
+		Your instructor will register you using the email address
+		you have in the school system. <strong>Posting of any kind of code in Piazza is not allowed.</strong>
+	</p>
+
+	<div class="h4 myUnderline">Class Announcements</div>
+	<p>
+		You are responsible for checking announcements we
+		post in the <strong>announcements</strong> Piazza folder.
+	</p>
+
+	<div class="h4 myUnderline">Excused Absence and Academic Accommodations</div>
+	<p>
+		See the section titled "Attendance and Missed Assignments"
+		available at <a href="http://www.ugst.umd.edu/courserelatedpolicies.html">Course Related Policies</a>.
+	</p>
+
+	<div class="h4 myUnderline">Accessibility</div>
+	<p>
+		See the section titled "Accessibility" available at
+		<a href="http://www.ugst.umd.edu/courserelatedpolicies.html">Course
+			Related Policies</a>.
+	</p>
+
+	<div class="h4 myUnderline">Academic Integrity</div>
+	<p><strong>Please read this information carefully. We take academic integrity
+			matters seriously.</strong>
+	</p>
+	<ol>
+		<li>
+			Academic dishonesty includes not only cheating, fabrication,
+			and plagiarism, but also includes helping other students commit acts of
+			academic dishonesty by allowing them to obtain copies of your work. All
+			submitted work must be your own. Cases of academic dishonesty
+			will be pursued to the fullest extent possible as stipulated by the
+			<a href="https://www.studentconduct.umd.edu/">Office of Student Conduct</a>.
+		</li>
+
+		<li><strong>Situations that often lead to academic integrity violations:</strong>
+			<ul>
+				<li>A student's friend/roommate shares an assignment's code. Once you provide
+					your code to another student, you are a facilitator, even if you indicate to the student "not to copy-paste" any of it. <strong>Actually we had a case in which a student CS degree was revoked for this reason.</strong>
+				</li>
+				<li>Students use online resources (github, Chegg, etc.) to find assignments' solutions.
+					The solutions are found by several students and all will be involved in an
+					academic case.
+				</li>
+				<li>Students assume we don't have tools that check for similarities among all students' submissions.
+				</li>
+				<li>Students get desperate and don't want a 0 in the assignment.
+				</li>
+				<li>Students are not aware of the expectations regarding academic integrity.
+				</li>
+				<li>Students assume we don't take academic integrity matters seriously.</li>
+				<li>You should only receive assistance from instructors/TAs. We have seen cases
+					in which the use of tutors have led to academic integrity violations (e.g., tutors
+					looked for assignment's solutions online).</li>
+			</ul>
+		</li>
+
+		<li><strong>
+				The Office of Student Conduct is responsible for handling academic integrity matters. After a report is submitted by an instructor, the case is evaluated by the office and it could result in an XF grade, degree revocation, or dismissal from the university.
+			</strong>
+		</li>
+
+		<li>
+			One of the most negative consequences of academic integrity violations is the emotional burden an academic integrity case has on a student. We have seen students extremely distraught as a result of an academic integrity violation. In many cases students chances for recommendations, TA positions, and other opportunities are negatively affected.
+		</li>
+		<li>Please read the section titled "Academic Integrity" available at
+			<a href="http://www.ugst.umd.edu/courserelatedpolicies.html">Course Related Policies</a>
+			and the information available at
+			<a href="http://www.cs.umd.edu/class/resources/academicIntegrity.html"> Academic Integrity</a>
+		</li>
+	</ol>
+
+
+	<div class="h4 myUnderline">Class Concerns</div>
+	<p>
+		If you or your parents have any class concerns, feel free to contact
+		the instructor. If an issue arises with the instructor, report it using
+		the form available at <a href="https://www.cs.umd.edu/classconcern">https://www.cs.umd.edu/classconcern</a>.
+	</p>
+
+	<div class="h4 myUnderline">Miscellaneous</div>
+	<ul>
+		<li>
+			At the end of the semester visit (<a href="http://www.courseevalum.umd.edu">www.courseevalum.umd.edu</a>) to
+			complete your course evaluations.
+		</li>
+
+		<li><strong>
+				Contact your instructor, the <a href="http://www.counseling.umd.edu">Counseling Center</a>, or both, if you are experiencing difficulties that affect your performance in your courses.
+			</strong>
+		</li>
+
+		<li>
+			UMD Course related policies are available at
+			<a href="http://www.ugst.umd.edu/courserelatedpolicies.html">http://www.ugst.umd.edu/courserelatedpolicies.html</a>.
+		</li>
+	</ul>
+
+
+	<div class="h4 myUnderline">Copyright</div>
+	<p>
+		All course materials are copyright UMCP, Department of Computer Science
+		&copy; 2021. All rights reserved. Students are permitted to use course
+		materials for their own personal use only. Course materials may not be
+		distributed publicly or provided to others (excepting other students in
+		the course), in any way or format.
+	</p>
+
+
+</div> <!-- end of document -->
+
+         
+        <div class="container-fluid"> 
+            <a href="https://www.umd.edu/web-accessibility/">Web Accessibility</a>
+        </div> 
+
+        <script src="bootstrap/jquery-3.2.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+   </body>
+</html>
+
+
