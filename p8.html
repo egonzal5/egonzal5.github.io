@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Recursion Exercise</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        a:link, .h1, .h2, .h3, .h4 {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 id="main" class="h2"><a href="http://www.cs.umd.edu/class/fall2020/cmsc131-010X-030X/">CMSC131 Fall 2021</a></h1>
+
+        <div class="h3">Recursion Exercise (Due Fiday, May 8th, 11:55 pm)</div>
+
+
+        <div class="h4">Objectives</div>
+        <p>To practice writing recursive methods.</p>
+
+
+        <div class="h4">Overview</div>
+        <p>
+            For this assignment you will implement a set of recursive methods processing
+            strings and arrays. One of methods (replaceCells) illustrates the power of
+            recursion. Think how would you implement this method without recursion.
+        </p>
+
+        <div class="h4">Grading</div>
+        <ul>
+            <li>(100%) Release Tests</li>
+        </ul>
+
+        <div class="h4">Code Distribution</div>
+        <p>The assignment's code distribution is available at
+            <a href="\Project8_Spr26.zip" download>.
+            Download it and import it as you have imported our class examples.
+            The code distribution provides you with the following:
+        </p>
+        <ul>
+            <li>A package named <strong>sysImplementation</strong> - In this package you will find
+                the <strong>Utilities.java</strong> class. You need to provide an implementation for each of the methods in this class. Information about each method can be found
+                at <a href="eliasgonzalez.me/recursion/">javadoc</a>.
+            </li>
+
+            <li>A package named <strong>tests </strong> - Includes
+                a shell file for your student tests.
+            </li>
+
+        </ul>
+
+        <div class="h4">Specifications</div>
+        <ol>
+            <li>Your methods must be recursive.</li>
+
+            <li>You may not use any kind of loop construct (e.g., for, while, do while).</li>
+
+            <li>You may not add any instance/static variables to the Utilities class. If you do, you will not learn
+                the concepts required to do well in the final exam and you will lose significant credit in this exercise.
+            </li>
+
+            <li>Do not add comments nor define variables/methods in the Utilities.java file that include the words "for", "while" or "do", otherwise <strong>ALL your release tests will fail</strong>. Each test first checks whether the Utilities.java file has any instance of the words do, while, for. If that is the case, the test fails. You should see in the submit server a message similar to the following when a test fails due to the use of do, while, for:
+                <pre>
+                "java.lang.IllegalArgumentException: Source Code Using Iteration Statement at..."
+                </pre>
+
+            </li>
+
+            <li>
+                Your release test points could be adjusted if you do not follow the above specifications.
+            </li>
+
+            <li>You may not use <strong>Arrays</strong> class methods (except for your student tests).
+            </li>
+
+            <li>You may not use the <strong>ArrayList</strong> class except for the <strong>getListRowIndices</strong> method.
+            </li>
+
+            <li>You may use loops for your student tests.</li>
+
+            <li>All your auxiliary methods should be defined as private.</li>
+
+            <li>
+                Do all your testing in your StudentTests.java file and do not add a main() to Utilities.java.
+            </li>
+
+            <li>
+                Do not add any additional classes.
+            </li>
+
+            <li>
+               It is important that you model/visualize the 2-dim array correctly.  Draw a diagram
+               so you can see what a particular value of x and y refers to.  For example, we can visualize a
+               2-Dim array as:
+                <pre>
+                     row0, col0    row0, col1   row0, col2
+
+                     row1, col0    row1, col1   row1, col2
+
+                     row2, col0    row2, col1   row2, col2
+
+                     if x == 1 and y == 2, the cell we are referring to is row1, col2
+
+                </pre>
+            </li>
+            <li>
+            Make sure that you are calling your methods using x and y correctly (and not switching them by mistake).  
+            </li>
+            <li>
+            Test your code with a very small 2-Dim array (e.g., 2x3) where you try to replace each cell.
+            </li>
+            
+            <li>
+            Recursion is like some friends; at first, you don't understand them and you don't like them, but once you get used to them and understand them, you love them and cannot live without them :).  Of course, you will always have friends that are just null reference exceptions.  Yes, you can distribute this quote anywhere :)
+            </li>
+        </ol>
+
+        <div class="h4">Sample Driver</div>
+        <p>
+            We provided a driver (<strong>SampleDriver.java</strong>) and expected output (<strong>SampleDriverOutput.txt</strong>) in the code distribution. Feel free
+            to use the driver to write your own tests.
+        </p>
+
+        <div class="h4">Style</div>
+        <p>
+            We will not grade style, but you should always write code that follows the guidelines defined.
+        </p>
+
+        <div class="h4">Student Tests</div>
+        <ul>
+            <li>You should be writing student tests as you develop your code.</li>
+            <li>We will not grade your student tests.</li>
+            <li>You may not receive assistance during office hours without student tests.</li>
+        </ul>
+
+        <div class="h4">Submission</div>
+        <p>
+            Submit your assignment as usual.
+        </p>
+
+        <div class="h4">Academic Integrity</div>
+     
+
+        <a href="https://www.umd.edu/web-accessibility/">Web Accessibility</a>
+
+    </div>
+
+
+    <script src="bootstrap/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
