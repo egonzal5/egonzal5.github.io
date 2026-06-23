@@ -1,0 +1,16 @@
+{
+    "images": [
+        {
+            "imageURL": "http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/kermit.jpg",
+            "description": "kermit image"
+        },
+        {
+            "imageURL": "http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/basketball.jpg",
+            "description": "Basketball image"
+        },
+        {
+            "imageURL": "http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/research.jpg",
+            "description": "Research image"
+        }
+    ]
+}
