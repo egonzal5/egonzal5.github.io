@@ -1,16 +1,16 @@
 {
     "images": [
         {
-            "imageURL": "http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/kermit.jpg",
-            "description": "kermit image"
+            "imageURL": "https://egonzal5.github.io/cmsc335/images/bestSoccerTeam.png",
+            "description": "Logo of the Best Soccer Team in the World"
         },
         {
-            "imageURL": "http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/basketball.jpg",
-            "description": "Basketball image"
+            "imageURL": "https://egonzal5.github.io/cmsc335/images/racoon.jpg",
+            "description": "Image of a Racoon"
         },
         {
-            "imageURL": "http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/research.jpg",
-            "description": "Research image"
+            "imageURL": "https://egonzal5.github.io/cmsc335/images/UMDRetro.png",
+            "description": "UMD Retro Logo image"
         }
     ]
 }
